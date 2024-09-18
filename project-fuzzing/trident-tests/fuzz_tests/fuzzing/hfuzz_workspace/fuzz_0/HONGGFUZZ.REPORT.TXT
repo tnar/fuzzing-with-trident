@@ -1,0 +1,51 @@
+=====================================================================
+TIME: 2024-09-17.09:44:15
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 0a9a28c000000000e8aacaf000000000.00000003.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.fffff7dbf200.STACK.18f35fad3f.CODE.-6.ADDR.0.INSTR.cmn_w0,_#0x1,_lsl_#12.fuzz
+PID: 60267
+SIGNAL: SIGABRT (6)
+PC: 0xfffff7dbf200
+FAULT ADDRESS: 0x0
+INSTRUCTION: cmn_w0,_#0x1,_lsl_#12
+STACK HASH: 00000018f35fad3f
+STACK:
+ <0x0000fffff7d7a67c> [func:UNKNOWN file: line:0 module:/usr/lib/aarch64-linux-gnu/libc.so.6]
+ <0x0000fffff7d67130> [func:UNKNOWN file: line:0 module:/usr/lib/aarch64-linux-gnu/libc.so.6]
+ <0x0000aaaaaba5f434> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaabf73d8> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaab81f5bc> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaba5b19c> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaba5af4c> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaba59c38> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaba5acec> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaabf8fe0> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaabf9060> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaabfb670> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaac24c74> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaac21fd0> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaac2678c> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaac2aeb4> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaac04424> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaac27284> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaba4f0a4> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaac27258> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000aaaaaac2aeec> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000fffff7d673fc> [func:UNKNOWN file: line:0 module:/usr/lib/aarch64-linux-gnu/libc.so.6]
+ <0x0000fffff7d674cc> [func:UNKNOWN file: line:0 module:/usr/lib/aarch64-linux-gnu/libc.so.6]
+ <0x0000aaaaaabf9bb0> [func:UNKNOWN file: line:0 module:/workspace/basic-5/trident-tests/fuzz_tests/fuzzing/hfuzz_target/aarch64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
